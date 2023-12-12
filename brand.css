@@ -1,0 +1,202 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+section h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #29215f; /* Set your desired color */
+    font-weight: bold;
+    background-color: rgb(209, 220, 246);
+    padding: 10px;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header img {
+    vertical-align: middle;
+    max-height: 100px; /* Adjust the height as needed */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+
+
+.product-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product {
+    text-align: center;
+    margin: 10px;
+
+}
+
+.product img {
+    width: 300px; /* Set the desired size */
+    height: 300px; /* Set the desired size */
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+}
+
+.decreased-price{
+    color: red;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+
+.jump-link-section {
+    text-align: center;
+}
+
+a.jump-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+a.jump-link:hover {
+    background-color: #eee;
+}
+
+/*Table*/
+table#pricing {
+	background-image: linear-gradient(to bottom, rgb(190, 215, 255), black);
+	border: 5px solid gray;
+}
+table#pricing th, table#pricing td {
+	border: 3px solid gray;
+	line-height: 1.4em;
+	padding: 8px;
+}
+
+table#pricing th {
+	background-color: black;
+	color: rgb(130, 210, 255);
+	font-weight: normal;
+    vertical-align: middle;
+}
+
+table#pricing td {
+	color: white;
+	font-size: 0.9em;
+	vertical-align: middle;
+}
+
+/* Column Styles */
+#firstCol {
+	width: 24%;
+}
+
+#dataCols {
+	width: 19%
+}
+
+/* Table Header Styles */
+thead tr {
+	height: 60px;
+}
+
+table#pricing > thead > tr:first-of-type > th:first-of-type {
+	font-size: 2em;
+}
+
+table#pricing > thead > tr:first-of-type > th:not(:first-of-type) {
+	background-color: transparent;
+	color: black;
+    font-size: large;
+}
+
+.source {
+    text-align: center;
+}
+
+.source a {
+    color:aqua;
+}
+
+
+
+/*Footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+    section h1 {
+      font-size: 1.5em;
+    }
+  
+    section p {
+      font-size: 0.9em;
+    }
+  
+    nav {
+      -webkit-order: 99;
+      order: 99;
+    }
+  
+    footer {
+      -webkit-order: 100;
+      order: 100;
+    }
+  }
+  
+  /* =============================================
+     Tablet and Desktop Styles: greater than 640px
+     =============================================
+  */
+  @media only screen and (min-width: 641px) {
+  }
